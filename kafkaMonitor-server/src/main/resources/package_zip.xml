@@ -25,6 +25,7 @@
                 <include>README*</include>
                 <include>LICENSE*</include>
                 <include>NOTICE*</include>
+                <include>script\*</include>
             </includes>
         </fileSet>
         <!--项目本身的jar-->

@@ -15,6 +15,7 @@
     <packaging>jar</packaging>
     <description>kafkaMonitor-server</description>
 
+
     <properties>
         <process.name>kafkaMonitor-server</process.name>
 
