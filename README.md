@@ -4,7 +4,8 @@
 kafka可视化监控与告警系统
 
 #### 软件架构
-软件架构说明
+- 前端架构：vue+highcharts+elementui
+- 后端架构：springboot
 
 
 #### 安装教程
