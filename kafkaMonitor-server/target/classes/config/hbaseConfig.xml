@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true">
+
+    <bean id="hbaseConfigBean" class="com.bean.hbase.HbaseConfigBean">
+        <property name="hbaseZookeeperQuorum" value="xcmg55,xcmg56,xcmg57,xcmg58,xcmg59"/>
+        <property name="hbaseZookeeperPropertyClientPort" value="2181"/>
+        <property name="zookeeperZnodeParent" value="/hbase-unsecure"/>
+    </bean>
+
+</beans>
