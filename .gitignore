@@ -1,8 +1,8 @@
 *.class
 .idea
 *.log
-logs/*
-target/*
+logs/
+target/
 node_modules/
 dist/
 *.iml
