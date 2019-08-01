@@ -10,9 +10,9 @@ export function post(api, params) {
 
 
 //获取所有的kafkaManager
-const getKafkaMonitorManagerListUrl = "/kafka/getKafkaMonitorManagerList";
+const getKafkaMonitorManagerListUrl = "/api/kafka/getKafkaMonitorManagerList";
 //更新kafkaManager
-const saveKafkaMonitorManagerUrl = "/kafka/saveKafkaMonitorManager";
+const saveKafkaMonitorManagerUrl = "/api/kafka/saveKafkaMonitorManager";
 //getTopicList
 const getTopicListUrl = "/api/kafka/getTopicList";
 //获取topic详细

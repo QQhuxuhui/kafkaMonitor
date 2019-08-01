@@ -27,7 +27,7 @@ import java.util.Map;
 public class LoginInterceptor extends HandlerInterceptorAdapter {
 
     Logger logger = LoggerFactory.getLogger(LoginInterceptor.class);
-    private static final String[] IGNORE_URI = {"/login", "/hbase/dataQuery", "/register", "/active", "/activeEmail", "/map"};
+    private static final String[] IGNORE_URI = {"/login", "/hbase/dataQuery", "/register", "/active", "/activeEmail", "/map","zookeeper"};
     private static final SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     @Autowired
@@ -42,7 +42,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         }
         boolean flag = false;
         String url = request.getRequestURL().toString();
-//        logger.info(">>>: {}", url);
+        logger.info(">>>: {}", url);
         for (String s : IGNORE_URI) {
             if (url.contains(s)) {
                 flag = true;
