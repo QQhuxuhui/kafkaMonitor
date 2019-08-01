@@ -20,7 +20,7 @@ import java.util.Date;
  * @Description:
  */
 @RestController
-@RequestMapping("zookeeper")
+@RequestMapping("/api/zookeeper")
 public class ZooKeeperController {
 
     @Autowired

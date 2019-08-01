@@ -14,23 +14,23 @@ const getKafkaMonitorManagerListUrl = "/kafka/getKafkaMonitorManagerList";
 //更新kafkaManager
 const saveKafkaMonitorManagerUrl = "/kafka/saveKafkaMonitorManager";
 //getTopicList
-const getTopicListUrl = "/kafka/getTopicList";
+const getTopicListUrl = "/api/kafka/getTopicList";
 //获取topic详细
-const getTopicDetailsUrl = "/kafka/getTopicDetails";
+const getTopicDetailsUrl = "/api/kafka/getTopicDetails";
 //获取group列表
-const getGroupListUrl = "/kafka/getGroupList";
-const getGroupOffsetAndLagListUrl = "/kafka/getGroupOffsetAndLagList";
+const getGroupListUrl = "/api/kafka/getGroupList";
+const getGroupOffsetAndLagListUrl = "/api/kafka/getGroupOffsetAndLagList";
 //获取监控和偏移量信息
-const getGroupAndKafkaMonitorUrl = "/kafka/getGroupAndKafkaMonitor";
+const getGroupAndKafkaMonitorUrl = "/api/kafka/getGroupAndKafkaMonitor";
 //添加监控
-const saveKafkaMonitorUrl = "kafka/saveKafkaMonitor";
-const getKafkaMonitorListUrl = "kafka/getKafkaMonitorList";
-const getKafkaMonitorByIdUrl = "kafka/getKafkaMonitorById";
-const getKafkaMonitorEmailsUrl = "kafka/getKafkaMonitorEmails";
+const saveKafkaMonitorUrl = "/api/kafka/saveKafkaMonitor";
+const getKafkaMonitorListUrl = "/api/kafka/getKafkaMonitorList";
+const getKafkaMonitorByIdUrl = "/api/kafka/getKafkaMonitorById";
+const getKafkaMonitorEmailsUrl = "/api/kafka/getKafkaMonitorEmails";
 //添加邮箱地址
-const saveEmailAddressUrl = "/email/saveEmailAddress";
+const saveEmailAddressUrl = "/api/email/saveEmailAddress";
 //获取所有邮箱地址
-const getEmailAddressListUrl = "/email/getEmailAddressList";
+const getEmailAddressListUrl = "/api/email/getEmailAddressList";
 
 
 export function getKafkaMonitorManagerList() {

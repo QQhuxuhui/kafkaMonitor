@@ -1,11 +1,5 @@
 <template>
   <div class="container">
-    <el-row :gutter="5" style="margin-bottom: 20px">
-      <el-col :span="4" :offset="19">
-        <span>更多功能：</span><el-link :href="kafkaManagerAddress" target="_blank" type="primary">KafkaManager</el-link>
-      </el-col>
-    </el-row>
-    <el-divider/>
     <el-row :gutter="5">
       <el-col :span="3"><span>请选择zookeeper</span></el-col>
       <el-col :span="4">
@@ -185,8 +179,7 @@
           // ]
         },
         topicPartitionDetailTableData: [],
-        loading: true,
-        kafkaManagerAddress: 'http://10.80.0.77:9000/'
+        loading: true
       }
     },
     methods: {

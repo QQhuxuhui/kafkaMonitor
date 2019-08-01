@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * @Description:
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api/user")
 public class UserController {
 
     @Autowired

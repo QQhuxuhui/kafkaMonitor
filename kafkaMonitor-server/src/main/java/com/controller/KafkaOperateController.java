@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Date: 2019/4/30 14:08
  * @Description:
  */
-@RequestMapping("/kafka/operate")
+@RequestMapping("/api/kafka/operate")
 @RestController
 public class KafkaOperateController {
 

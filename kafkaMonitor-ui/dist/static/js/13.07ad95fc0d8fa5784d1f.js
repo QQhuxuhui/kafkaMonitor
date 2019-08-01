@@ -1,2 +1,0 @@
-webpackJsonp([13],{aJLd:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={name:"",mounted(){this.$store.dispatch("getEmailAddressList")}},s={render:function(){var e=this.$createElement;return(this._self._c||e)("router-view")},staticRenderFns:[]};var a=n("VU/8")(r,s,!1,function(e){n("l1RD")},"data-v-3f594d9c",null);t.default=a.exports},l1RD:function(e,t){}});
-//# sourceMappingURL=13.07ad95fc0d8fa5784d1f.js.map

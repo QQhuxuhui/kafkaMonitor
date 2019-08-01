@@ -24,7 +24,7 @@ import java.util.*;
 /**
  * @Auther: huxuhui
  * @Date: 2019/4/1 17:30
- * @Description:
+ * @Description: 数据监控服务
  */
 @Service
 @Transactional
@@ -102,6 +102,11 @@ public class KafkaOffsetMonitorServiceImpl implements KafkaOffsetMonitorService 
         }
         if (kafkaOffsetMonitor.getEmailAlter() == null) {
             kafkaOffsetMonitor.setEmailAlter(false);
+        }
+        //如果记录存在，保留创建人
+        KafkaOffsetMonitor kafkaOffsetMonitorDb = kafkaOffsetMonitorRepository.findById(id);
+        if (kafkaOffsetMonitorDb != null) {
+            kafkaOffsetMonitor.setCreateBy(kafkaOffsetMonitorDb.getCreateBy());
         }
         kafkaOffsetMonitor.setUpdateDate(new Date());
         kafkaOffsetMonitorRepository.save(kafkaOffsetMonitor);

@@ -1,3 +1,6 @@
+export JAVA_HOME=$JAVA_HOME
+#export JAVA_HOME=/usr/java/jdk1.8.0_211
+
 FILE="kafkaMonitor-server.jar"
 dir="../"
 CONFIGPATH="$dir/conf"
@@ -32,7 +35,7 @@ start() {
       echo -n "Starting $MAIN_CLASS ..."
 
 	  #echo java -cp ${CLASSPATH}$dir$FILE $MAIN_CLASS
-	  nohup java -cp ${CLASSPATH}$dir$FILE $MAIN_CLASS>>run.out  2>&1 &
+	  nohup $JAVA_HOME/bin/java -cp ${CLASSPATH}$dir$FILE $MAIN_CLASS>>run.out  2>&1 &
 	  echo $!>$dir/vt.pid
 	  pid=`cat $dir/vt.pid`
       if [ $pid -ne 0 ]; then

@@ -26,7 +26,7 @@ import java.util.*;
 /**
  * @Auther: huxuhui
  * @Date: 2019/4/30 11:45
- * @Description:
+ * @Description: topic管理
  */
 @Service
 public class KafkaOperateServiceImpl implements KafkaOperateService {

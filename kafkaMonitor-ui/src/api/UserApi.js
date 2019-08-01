@@ -1,9 +1,9 @@
 import request from '../request.js'
 
-const loginUrl = "/user/login";
-const registerUrl = "/user/register";
-const activeUrl = "/user/active";
-const loginOutUrl = "/user/loginOut";
+const loginUrl = "/api/user/login";
+const registerUrl = "/api/user/register";
+const activeUrl = "/api/user/active";
+const loginOutUrl = "/api/user/loginOut";
 
 export function login(username, password) {
   return request.post(loginUrl, {

@@ -13,7 +13,7 @@ import com.service.EmailAddressService;
  * @Description:
  */
 @RestController
-@RequestMapping("/email")
+@RequestMapping("/api/email")
 public class EmailAddressController {
 
     @Autowired

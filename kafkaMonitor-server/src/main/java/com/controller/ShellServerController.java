@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Description: 服务器
  */
 @RestController
-@RequestMapping("/shellServer")
+@RequestMapping("/api/shellServer")
 public class ShellServerController {
 
     @Autowired

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Date: 2019/4/1 19:44
  * @Description:
  */
-@RequestMapping("/kafka")
+@RequestMapping("/api/kafka")
 @RestController
 public class KafkaOffsetController {
 

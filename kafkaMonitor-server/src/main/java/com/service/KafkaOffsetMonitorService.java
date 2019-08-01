@@ -60,7 +60,7 @@ public interface KafkaOffsetMonitorService {
     List<KafkaOffsetMonitor> getKafkaMonitorList();
 
     /**
-     * 添加服务器
+     * 添加监控服务
      * @param kafkaOffsetMonitorManager
      * @return
      */

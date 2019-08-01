@@ -1,10 +1,10 @@
 import request from "../request";
 
-const getZooKeeperServerListUrl = "/zookeeper/getZooKeeperServerList";
-const saveZookeeperServerUrl = "/zookeeper/save";
-const testConnUrl = "/zookeeper/testConn";
+const getZooKeeperServerListUrl = "/api/zookeeper/getZooKeeperServerList";
+const saveZookeeperServerUrl = "/api/zookeeper/save";
+const testConnUrl = "/api/zookeeper/testConn";
 //获取分区数据详情
-const getTopicPartitionDetailUrl = "/kafka/operate/getTopicPartitionDetail";
+const getTopicPartitionDetailUrl = "/api/kafka/operate/getTopicPartitionDetail";
 
 export function getZooKeeperServerList() {
   return request.get(getZooKeeperServerListUrl);

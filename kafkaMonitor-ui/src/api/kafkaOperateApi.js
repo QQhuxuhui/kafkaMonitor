@@ -1,11 +1,11 @@
 import request from "../request";
 
-const getTopicListUrl = "/kafka/operate/getTopicList";
-const createTopicUrl = "/kafka/operate/createTopic";
-const deleteTopicUrl = "/kafka/operate/deleteTopic";
-const topicExistsUrl = "/kafka/operate/topicExists";
+const getTopicListUrl = "/api/kafka/operate/getTopicList";
+const createTopicUrl = "/api/kafka/operate/createTopic";
+const deleteTopicUrl = "/api/kafka/operate/deleteTopic";
+const topicExistsUrl = "/api/kafka/operate/topicExists";
 //获取分区数据详情
-const getTopicPartitionDetailUrl = "/kafka/operate/getTopicPartitionDetail";
+const getTopicPartitionDetailUrl = "/api/kafka/operate/getTopicPartitionDetail";
 
 export function getTopicList(zookeeper) {
   return request.get(getTopicListUrl, {zookeeper: zookeeper});
