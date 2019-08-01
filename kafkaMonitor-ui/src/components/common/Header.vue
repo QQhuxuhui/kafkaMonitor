@@ -24,7 +24,7 @@
         <!--          </el-tooltip>-->
         <!--        </div>-->
         <!-- 用户头像 -->
-        <div class="user-avator"><img src="../../assets/img/img.jpg"></div>
+<!--        <div class="user-avator"><img src="../../assets/img/img.jpg"></div>-->
         <!-- 用户名下拉菜单 -->
         <el-dropdown class="user-name" @command="handleCommand">
                     <span class="el-dropdown-link">
@@ -152,7 +152,7 @@
 
   .header-right {
     float: right;
-    padding-right: 50px;
+    padding-right: 30px;
   }
 
   .header-user-con {
@@ -164,6 +164,7 @@
   .btn-fullscreen {
     transform: rotate(45deg);
     margin-right: 5px;
+    margin-bottom: 10px;
     font-size: 24px;
   }
 
@@ -192,7 +193,8 @@
   }
 
   .user-name {
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
   }
 
   .user-avator {
