@@ -82,14 +82,5 @@ public class SSHCommandExecutor {
         return stdout;
     }
 
-    public static void main(final String[] args) {
-        SSHCommandExecutor sshExecutor = new SSHCommandExecutor("10.80.0.76", "root", "XreaServer_2014");
-        sshExecutor.execute("uname -s -r -v");
-
-        Vector<String> stdout = sshExecutor.getStandardOutput();
-        for (String str : stdout) {
-            System.out.println(str);
-        }
-    }
 }
 

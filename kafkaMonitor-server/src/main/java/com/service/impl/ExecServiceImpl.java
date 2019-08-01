@@ -82,14 +82,4 @@ public class ExecServiceImpl implements ExecService {
         shellResponseBean.setData(list);
         return shellResponseBean;
     }
-
-    public static void main(String[] args) {
-        ServerInfoBean loginInfoBean = new ServerInfoBean();
-        loginInfoBean.setIp("10.80.0.73");
-        ExecService execService = new ExecServiceImpl();
-        ShellResponseBean shellResponseBean = execService.executeCommand(loginInfoBean, "/usr/hdp/2.5.0.0-1245/kafka/bin/kafka-consumer-groups.sh --zookeeper xcmg55.xcmg.com:2181 --group xiothub_schwing_rawdata_history_xgit_xcmg_schwing_data --describe");
-        for (String s : shellResponseBean.getData()) {
-            System.out.println(s);
-        }
-    }
 }
