@@ -2,7 +2,7 @@
 <configuration scan="true" scanPeriod="30 seconds">
 <include resource="org/springframework/boot/logging/logback/base.xml"/>
 <jmxConfigurator/>
-<property name="USER_HOME" value="./logs/" />
+<property name="USER_HOME" value="../logs/" />
 <timestamp key="FILE_NAME" datePattern="yyyy-MM-dd"/>
 
 <!--<prudent>true</prudent>-->

@@ -6,7 +6,6 @@
     </formats>
     <!--includeBaseDirectory：指定是否包含打包层目录（比如finalName是output，当值为true，所有文件被放在output目录下，否则直接放在包的根目录下）-->
     <includeBaseDirectory>false</includeBaseDirectory>
-
     <fileSets>
         <fileSet>
             <directory>${project.build.OutputDirectory}</directory>
@@ -22,10 +21,17 @@
             <directory>${project.basedir}</directory>
             <outputDirectory>\</outputDirectory>
             <includes>
+                <include>\script\*.sh</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.basedir}</directory>
+            <outputDirectory>\</outputDirectory>
+            <includes>
                 <include>README*</include>
                 <include>LICENSE*</include>
                 <include>NOTICE*</include>
-                <include>script\*</include>
             </includes>
         </fileSet>
         <!--项目本身的jar-->

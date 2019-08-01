@@ -4,5 +4,4 @@
 logs/
 target/
 node_modules/
-dist/
 *.iml

@@ -1,10 +1,10 @@
 FILE="kafkaMonitor-server.jar"
-dir="./"
+dir="../"
 CONFIGPATH="$dir/conf"
 LIB="$dir/lib"
 MAIN_CLASS="com.ServiceApplication"
 #加载配置文件
-CLASSPATH=.:$CONFIGPATH:$FILE
+CLASSPATH=.:$CONFIGPATH:$dir$FILE
 #加载jar
 cmd=$1
 for i in $LIB/*.jar;
@@ -29,10 +29,12 @@ start() {
       echo "================================"
       echo "COMMAND start kafkaMonitor-server"
       echo "================================"
-	
       echo -n "Starting $MAIN_CLASS ..."
-	  nohup java -cp ${CLASSPATH}$FILE $MAIN_CLASS>>run.out  2>&1 &
-	  echo $!>vt.pid
+
+	  #echo java -cp ${CLASSPATH}$dir$FILE $MAIN_CLASS
+	  nohup java -cp ${CLASSPATH}$dir$FILE $MAIN_CLASS>>run.out  2>&1 &
+	  echo $!>$dir/vt.pid
+	  pid=`cat $dir/vt.pid`
       if [ $pid -ne 0 ]; then
          echo "(pid=`cat $dir/vt.pid`) [OK]"
       else

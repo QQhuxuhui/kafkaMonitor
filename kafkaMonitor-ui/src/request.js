@@ -11,7 +11,7 @@ let cancel, promiseArr = {}
 const CancelToken = axios.CancelToken;
 
 //设置默认值
-axios.defaults.baseURL = 'http://localhost:8091';
+// axios.defaults.baseURL = 'http://localhost:8091';
 //设置默认请求头
 axios.defaults.headers = {
   'X-Requested-With': 'XMLHttpRequest',
