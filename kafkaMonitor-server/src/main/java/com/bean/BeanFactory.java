@@ -1,6 +1,6 @@
 package com.bean;
 
-import com.constants.Constants;
+import com.common.constants.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;

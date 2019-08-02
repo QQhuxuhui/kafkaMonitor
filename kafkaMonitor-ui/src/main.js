@@ -12,8 +12,8 @@ import {getEmailAddressList, getKafkaMonitorManagerList, getKafkaMonitorList} fr
 import {getCookie} from './util/cookieUtil'
 
 // vue task node
-import VueTaskNode from 'vue-task-node'
-import "vue-task-node/dist/css/vnode.css"
+// import VueTaskNode from 'vue-task-node'
+// import "vue-task-node/dist/css/vnode.css"
 
 
 // Vue.prototype.$http = axios;
@@ -24,7 +24,7 @@ Vue.config.productionTip = false;
 Vue.use(ElementUI); //使用ElementUI组件
 Vue.use(Vuex);
 
-Vue.use(VueTaskNode);
+// Vue.use(VueTaskNode);
 
 //路由狗子函数
 router.beforeEach((to, from, next) => {

@@ -90,7 +90,7 @@ public class UserServiceImpl implements UserService {
         }
         Map<String, Object> params = new HashMap<>();
         //activeUrl
-        String url = "http://" + ipAndPortService.getIp() + ":" + ipAndPortService.port() + "/user/activeEmail?token=" + tokenService.sign(userInfo);
+        String url = "http://" + ipAndPortService.getIp() + ":" + ipAndPortService.port() + "/api/user/activeEmail?token=" + tokenService.sign(userInfo);
         params.put("activeUrl", url);
         params.put("username", userInfo.getUsername());
         try {

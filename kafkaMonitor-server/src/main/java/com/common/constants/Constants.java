@@ -1,4 +1,4 @@
-package com.constants;
+package com.common.constants;
 
 import java.nio.charset.Charset;
 

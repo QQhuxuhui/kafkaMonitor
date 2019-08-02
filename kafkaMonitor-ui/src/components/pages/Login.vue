@@ -172,7 +172,8 @@
                         message: '激活邮件发送成功，请到邮箱中激活账号',
                         type: 'success'
                       });
-                      this.$router.push('/');
+                      //this.$router.push('/login');
+                      this.loginShow=true
                     } else {
                       this.$message({
                         //消息弹窗组件,类似toast
