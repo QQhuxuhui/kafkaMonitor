@@ -17,7 +17,9 @@ Kafka可视化监控与告警系统，项目基于开源软件[kafkaOffsetMonito
 #### 系统部分截图
 - 实时面板
 ![](https://i.loli.net/2019/08/02/5d43f0779595145922.jpg)
+
 - 配置告警
+
 ![](https://i.loli.net/2019/08/05/vKWbTGqaicrhzJP.png)
 - Topic管理
 ![](https://i.loli.net/2019/08/02/5d43efa7de7be28935.jpg)
