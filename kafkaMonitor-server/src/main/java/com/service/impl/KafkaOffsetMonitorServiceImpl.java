@@ -30,8 +30,7 @@ import java.util.*;
 @Transactional
 public class KafkaOffsetMonitorServiceImpl implements KafkaOffsetMonitorService {
 
-    static KafkaOffsetMonitorUrl kafkaOffsetMonitorUrl = BeanFactory.getBean(KafkaOffsetMonitorUrl.class);
-
+    private static KafkaOffsetMonitorUrl kafkaOffsetMonitorUrl = BeanFactory.getBean(KafkaOffsetMonitorUrl.class);
 
     @Autowired
     private IdAndEmailRepository idAndEmailRepository;
@@ -151,7 +150,6 @@ public class KafkaOffsetMonitorServiceImpl implements KafkaOffsetMonitorService 
         KafkaOffsetMonitorManager kafkaOffsetMonitorManager = new KafkaOffsetMonitorManager();
         kafkaOffsetMonitorManager.setDeleted(false);
         Example<KafkaOffsetMonitorManager> example = Example.of(kafkaOffsetMonitorManager);
-//        return kafkaOffsetMonitorManagerRepository.findAll();
         return kafkaOffsetMonitorManagerRepository.findAll(example);
     }
 

@@ -1,5 +1,6 @@
 package com.bean.kafka;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,9 +13,9 @@ public class TopicList {
     /**
      * 返回编码
      */
-    int code = 200;
+    private int code = 200;
 
-    List<String> topicList;
+    private List<String> topicList = new ArrayList<>();
 
     public int getCode() {
         return code;
