@@ -208,7 +208,7 @@
                 if (data.code === 200) {
                   let userInfo = data.data;
                   // console.info(userInfo);
-                  setCookie('token', userInfo.token, 2);
+                  setCookie('token', userInfo.token);
                   //昵称
                   this.$store.state.name = userInfo.name;
                   //账号
