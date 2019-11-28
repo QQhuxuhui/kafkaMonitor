@@ -1,2 +1,0 @@
-webpackJsonp([17],{"3Xzb":function(e,t){},juB9:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"container"},[this._v("\n  用户中心\n")])},staticRenderFns:[]};var r=n("VU/8")({name:""},a,!1,function(e){n("3Xzb")},"data-v-2a121916",null);t.default=r.exports}});
-//# sourceMappingURL=17.145e3f7af067a2bb2f51.js.map
