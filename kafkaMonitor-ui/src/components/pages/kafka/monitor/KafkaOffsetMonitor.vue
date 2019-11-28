@@ -353,8 +353,8 @@
                 let logSize = 0;
                 //计算所有分区的偏移量
                 for (i = 0; i < data.group.offsets.length; i++) {
-                  offset = offset + data.group.offsets[0].offset;
-                  logSize = logSize + data.group.offsets[0].logSize;
+                  offset = offset + data.group.offsets[i].offset;
+                  logSize = logSize + data.group.offsets[i].logSize;
                 }
                 let lag = logSize - offset;
                 that.char_logSize = logSize;
