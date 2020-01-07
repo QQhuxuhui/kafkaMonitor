@@ -347,10 +347,15 @@
               let data = response.data;
               if (data.code === 200) {
                 data = data.data;
-                let offsets = data.group.offsets[0];
-                let modified = offsets.modified;
-                let offset = offsets.offset;
-                let logSize = offsets.logSize;
+                // let offsets = data.group.offsets[0];
+                // let modified = offsets.modified;
+                let offset = 0;
+                let logSize = 0;
+                //计算所有分区的偏移量
+                for (i = 0; i < data.group.offsets.length; i++) {
+                  offset = offset + data.group.offsets[i].offset;
+                  logSize = logSize + data.group.offsets[i].logSize;
+                }
                 let lag = logSize - offset;
                 that.char_logSize = logSize;
                 that.char_offset = offset;
